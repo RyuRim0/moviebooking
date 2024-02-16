@@ -1,0 +1,113 @@
+table tr td{
+    border: 2px solid #ccc;
+}
+td{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+body{
+  background-color: #222;
+}
+.container {
+    width: 100%;
+    margin : 0 auto;
+  }    
+  .navi{
+    width:100%;
+    height:70px;
+    padding-bottom:10px; 
+    border-bottom: 2px solid #fff;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+  }
+  .navi ul{
+    list-style: none;
+    padding-top:10px;
+    padding-bottom:5px;
+  }
+  .navi ul li {
+    float:left;
+    width:150px;
+    padding:10px; 
+    text-align: center; 
+  }
+  .navi a:link, .navi a:visited{
+    /* display:block; */
+    font-size:15px;
+    font-weight: bold;
+    color: #fff;
+    /* color:#000; */
+    padding: 10px;
+    text-decoration: none;  /* 밑줄 없앰 */
+  }
+  .navi a:hover,  .navi a:focus {
+    color:GoldenRod;  /* 글자 색 */
+    border-bottom: 2px solid GoldenRod;
+  }
+  .navi a:active {
+    color:GoldenRod;
+  }
+  .content{
+   margin: 30px auto;
+   width: 400px;
+   padding: 20px;
+   border: 1px solid #222;
+   border-radius: 5px;
+  }
+  #join,#login{
+    position: relative;
+    font-size: 10px;
+    float: right;
+  }
+/* 
+
+  #intro:target{
+   background-color: #0069e0;
+   color: #fff;
+  }
+  #movie:target{
+   background-color: #ff9844;
+  }
+  #booking:target{
+   background-color: #fff8dc;
+  } */
+
+  .image-slideshow {
+    position: relative;
+    width:  100%; /* Adjust as needed */
+    height:  1000px; /* Adjust as needed */
+    overflow: hidden;
+  }
+  
+  .image-slideshow img {
+    width:  100%;
+    height: auto;
+    position: absolute;
+    opacity:  0;
+    animation: slideShow  12s infinite;
+  }
+  
+  .image-slideshow img:nth-child(1) {
+    animation-delay:  0s;
+  }
+  
+  .image-slideshow img:nth-child(2) {
+    animation-delay:  4s;
+  }
+  
+  .image-slideshow img:nth-child(3) {
+    animation-delay:  8s;
+  }
+  .image-slideshow img:nth-child(4) {
+    animation-delay:  12s;
+  }
+  
+  @keyframes slideShow {
+     0%,  100% { opacity:  0; }
+     8%,  33% { opacity:  1; }
+  }
+  
+
+

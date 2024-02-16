@@ -1,0 +1,21 @@
+#feecontainer{
+    color: white;
+    text-align: center;
+}
+#feetable{
+    width: 1200px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    color: black;
+    border: 1px solid black;
+}
+th{
+    width: 600px;
+    height: 50px;
+    text-align: center;
+    background-color: lightgray;
+}
+td{
+    height: 50px;
+    background-color: antiquewhite;
+}

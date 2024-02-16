@@ -1,0 +1,49 @@
+
+#introductioncontainer{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#moviebox{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 20px; 
+}
+.movielist:hover .movieinfo{
+    opacity: 1;
+    transform: translateY(-200px) ;
+}
+
+.movielist{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    position: relative;
+}
+.movieimg{
+    width: 350px;
+    height: 500px;
+    margin: 5px;
+}
+.movieinfo{
+    position: absolute;
+    top: 200px;
+    background: rgba(121, 122, 119, 0.9);
+    opacity: 0;
+    transition: all 0.6s ease-in-out;
+    z-index: 2;
+    text-align: left;
+    width: 350px;
+    height: 500px;
+    margin: 5px;
+    color: white;
+}
+
+h3,p{
+    padding: 10px;
+}

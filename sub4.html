@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>예약하기</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sub4.style.css">
+    <script defer src="js/booking.js"></script>
+</head>
+<body>   
+    <div class="container">
+        <nav class="navi">
+            <ul>
+              <li><a href="main.html">이용 안내</a></li>
+              <li><a href="sub2.html">영화 소개</a></li>
+              <li><a href="sub3.html">예약 방법 및 요금</a></li>
+              <li><a href="sub4.html">예약하기</a></li>
+            </ul>
+            <div id="login"><a href="#">로그인</a></div>
+            <div id="join"><a href="#" >회원가입</a></div>
+        </nav>
+    
+        <div id="reservationcontainer">
+            <div class="movieContainer">
+                <label for="movie">Pick a Movie</label>
+            <select name="PickMovie" id="movie">
+                <option class="price" value="18000">귀멸의 칼날(18000원)</option>
+                <option class="price" value="15000">건국전쟁(15000원)</option>
+                <option class="price" value="20000">듄-파트2(20000원)</option>
+            </select>
+            </div>
+            <ul id="guideContainer">
+            <li id="AvailableSeat"></li>
+            <li>Available Seat</li>
+            <li id="OccupiedSeat"></li>
+            <li>Occupied Seat</li>
+            </ul>
+            <div class="seatContainer">
+            <div class="screen"></div>
+             </div>
+             <div id="display">
+            <p class="text">현재 선택한 좌석수는 <span id="count">0</span>석이며
+                결제금액은 <span id="costs">0</span>원 입니다.</p>               
+            </div>
+        </div>
+    </div>
+</body>
+</html>
